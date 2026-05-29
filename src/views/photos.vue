@@ -2,9 +2,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const images = [
-  { src: '/src/assets/image1.jpg', title: 'Highland Trails', desc: 'Fresh mountain air and epic viewpoints.' },
-  { src: '/src/assets/image2.jpg', title: 'Lake Reflections', desc: 'Calm waters and soft evening sky tones.' },
-  { src: '/src/assets/image3.jpg', title: 'City Lights', desc: 'Modern city charm and cultural rhythm.' }
+  { src: '/src/assets/image1.jpg', title: 'Lake Reflections', desc: 'Fresh mountain air and epic viewpoints.' },
+  { src: '/src/assets/image2.jpg', title: 'City Lights', desc: 'Calm waters and soft evening sky tones.' },
+  { src: '/src/assets/image3.jpg', title: 'Lake View', desc: 'Modern city charm and cultural rhythm.' }
 ]
 
 const currentIndex = ref(0)
