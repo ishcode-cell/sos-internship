@@ -1,122 +1,101 @@
 <template>
   <!-- Hero Section -->
   <section
-    class="relative h-screen bg-cover bg-center text-white overflow-hidden"
+    class="relative min-h-screen bg-cover bg-center text-white overflow-hidden"
     style="
       background-image:
-      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-      url('/src/assets/image2.jpg');
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url('/src/assets/image2.jpg');
       background-attachment: fixed;
     "
   >
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/30"></div>
-
-    <!-- Main Content -->
+    <!-- Content Wrapper -->
     <div
-      class="relative z-10 h-full flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16"
+      class="relative z-10 min-h-screen flex items-center justify-center px-6 md:px-16 py-20"
     >
-
-      <!-- Left Content -->
-      <div class="max-w-2xl">
-        <p
-          class="uppercase tracking-[6px] text-green-300 text-sm mb-4 font-semibold"
-        >
-          Visit Rwanda
-        </p>
-
-        <h1
-          class="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-2xl"
-        >
-          Explore The <br />
-          Beauty of Rwanda
-        </h1>
-
-        <p class="mt-6 text-lg md:text-xl leading-relaxed text-gray-200">
-          Discover breathtaking landscapes, rich culture, mountain gorillas,
-          luxury safaris, and unforgettable adventures across the land of a
-          thousand hills.
-        </p>
-
-        <!-- Buttons -->
-        <div class="mt-8 flex gap-4">
-          <button
-            class="bg-green-600 hover:bg-green-700 transition px-6 py-3 rounded-full font-semibold shadow-lg"
-          >
-            Explore Tours
-          </button>
-
-          <button
-            class="border border-white hover:bg-white hover:text-black transition px-6 py-3 rounded-full font-semibold"
-          >
-            Learn More
-          </button>
-        </div>
-      </div>
-
-      <!-- Right Glass Card -->
       <div
-        class="mt-12 md:mt-0 max-w-md backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl"
+        class="w-full max-w-7xl flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12"
       >
-        <h2 class="text-4xl font-bold text-green-300 mb-4">
-          About Us
-        </h2>
+        <!-- Left Content -->
+        <div class="max-w-2xl text-center lg:text-left">
+          <p class="uppercase tracking-[6px] text-green-300 text-xs mb-4 font-semibold">
+            Visit Rwanda
+          </p>
 
-        <p class="text-lg leading-relaxed text-gray-100">
-          Rwanda is one of Africa’s most beautiful destinations, known for its
-          rolling hills, wildlife adventures, vibrant cities, and warm
-          hospitality. Whether you seek nature, culture, or luxury travel,
-          Rwanda offers experiences you will never forget.
-        </p>
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+            Explore The <br />
+            Beauty of Rwanda
+          </h1>
 
-        <!-- Tour Highlights -->
-        <div class="mt-8 space-y-4">
+          <p class="mt-6 text-base md:text-lg text-gray-200 leading-relaxed">
+            Discover breathtaking landscapes, rich culture, mountain gorillas,
+            luxury safaris, and unforgettable adventures across the land of a
+            thousand hills.
+          </p>
 
-          <div
-            class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl"
-          >
-            <div class="text-3xl">🦍</div>
+          <!-- Buttons -->
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
-            <div>
-              <h3 class="font-bold text-lg">Gorilla Trekking</h3>
-              <p class="text-sm text-gray-200">
-                Explore Volcanoes National Park.
-              </p>
-            </div>
+            <!-- Explore Tours -->
+            <button
+              class="bg-green-600 hover:bg-green-700 transition px-6 py-3 rounded-full font-semibold shadow-lg"
+            >
+              Explore Tours
+            </button>
+
+            <!-- Learn More (WHITE BUTTON) -->
+            <button
+              class="bg-white text-black hover:bg-gray-200 transition px-6 py-3 rounded-full font-semibold shadow-lg"
+            >
+              Learn More
+            </button>
+
           </div>
-
-          <div
-            class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl"
-          >
-            <div class="text-3xl">🌋</div>
-
-            <div>
-              <h3 class="font-bold text-lg">Nature Tours</h3>
-              <p class="text-sm text-gray-200">
-                Discover mountains, lakes, and forests.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl"
-          >
-            <div class="text-3xl">🏙️</div>
-
-            <div>
-              <h3 class="font-bold text-lg">City Experiences</h3>
-              <p class="text-sm text-gray-200">
-                Enjoy the beauty of Kigali city life.
-              </p>
-            </div>
-          </div>
-
         </div>
-      </div>
 
+        <!-- RIGHT GLASSMORPHISM BOX -->
+        <div
+          class="w-full max-w-sm bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-2xl text-white"
+        >
+          <h2 class="text-2xl font-bold text-green-300 mb-4">
+            About Us
+          </h2>
+
+          <p class="text-sm text-gray-200 mb-6">
+            Rwanda is one of Africa’s most beautiful destinations, known for its
+            rolling hills, wildlife adventures, and warm hospitality.
+          </p>
+
+          <!-- Feature Cards -->
+          <div class="space-y-4">
+
+            <!-- Card 1 -->
+            <div class="bg-white/10 hover:bg-white/20 transition p-4 rounded-xl">
+              <div class="text-2xl">🦍</div>
+              <h3 class="font-bold mt-2">Gorilla Trekking</h3>
+              <p class="text-xs text-gray-200">Volcanoes National Park</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white/10 hover:bg-white/20 transition p-4 rounded-xl">
+              <div class="text-2xl">🌋</div>
+              <h3 class="font-bold mt-2">Nature Tours</h3>
+              <p class="text-xs text-gray-200">Mountains and lakes</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white/10 hover:bg-white/20 transition p-4 rounded-xl">
+              <div class="text-2xl">🏙️</div>
+              <h3 class="font-bold mt-2">City Experiences</h3>
+              <p class="text-xs text-gray-200">Kigali city tours</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
